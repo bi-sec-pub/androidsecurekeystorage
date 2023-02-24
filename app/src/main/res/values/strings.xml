@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Secure Key Storage</string>
+
+    <string name="placeholder">Placeholder</string>
+
+    <string name="api_via_cpp">API from C++ file</string>
+    <string name="api_via_keystore">API with Keystore (shared preferences)</string>
+</resources>

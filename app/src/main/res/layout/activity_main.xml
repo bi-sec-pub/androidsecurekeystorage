@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_via_cpp"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="220dp"
+        android:layout_weight="1"
+        android:ellipsize="marquee"
+        android:lineHeight="14.5sp"
+        android:lineBreakStyle="loose"
+        android:maxLines="3"
+        android:scrollHorizontally="false"
+        android:text="@string/placeholder"
+        app:layout_constraintStart_toEndOf="@+id/lbl_via_cpp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_via_keystore"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_weight="1"
+        android:ellipsize="none"
+        android:maxLines="3"
+        android:scrollHorizontally="false"
+        android:text="@string/placeholder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lbl_via_keystore"
+        app:layout_constraintTop_toBottomOf="@+id/txt_via_cpp"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <TextView
+        android:id="@+id/lbl_via_keystore"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:lineBreakStyle="loose"
+        android:ellipsize="marquee"
+        android:text="@string/api_via_keystore"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_via_cpp"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="@string/api_via_keystore" />
+
+    <TextView
+        android:id="@+id/lbl_via_cpp"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="220dp"
+        android:lineBreakStyle="loose"
+        android:ellipsize="marquee"
+        android:text="@string/api_via_cpp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/api_via_cpp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
